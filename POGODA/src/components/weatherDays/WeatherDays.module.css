@@ -1,0 +1,24 @@
+.daysBox{   
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+   margin-left: 400px;
+}
+
+.box {
+   width: 150px;
+   height: 200px;
+   /* border: 2px solid black; */
+   list-style: none;
+   background-color: rgba(11, 55, 97, 0.315);
+   border-radius: 10px;
+   margin-right: 5px;
+}
+
+.text {
+   text-align: center;
+   font-weight: 600;
+}
+.icon{
+   padding-left: 25%;
+}

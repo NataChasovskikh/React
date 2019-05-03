@@ -1,0 +1,6 @@
+const ADD = 'notes/ADD';
+const DELETE = 'notes/DELETE';
+const TOGGLECOMPLETED = 'notes/TOGGLECOMPLETED';
+const CHANGEFILTER = 'notes/CHANGEFILTER';
+
+export {ADD, DELETE, TOGGLECOMPLETED, CHANGEFILTER};

@@ -1,0 +1,7 @@
+const ACTIONTYPES = {
+   INCREMENT:'INCREMENT',
+   DECREMENT:'DECREMENT',
+   RESET:'RESET'
+};
+
+export default ACTIONTYPES;

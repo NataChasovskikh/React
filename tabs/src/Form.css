@@ -1,0 +1,15 @@
+.form {
+    outline: 1px solid black;
+    height: 300px;
+    width: 200px;
+    margin: 15px ;
+    padding: 10px;
+}
+.flex {
+display: flex;
+justify-content: space-around;
+}
+.flex div p:hover {
+    color: palevioletred;
+    cursor: pointer;
+}

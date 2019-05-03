@@ -1,0 +1,10 @@
+.menu {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 5px;
+   justify-content: space-around;
+}
+
+.card {
+   list-style: none;
+}

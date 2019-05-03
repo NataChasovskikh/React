@@ -1,0 +1,10 @@
+.btn {
+  position: absolute; 
+  top: 55%;
+  left: 64%;
+  width: 100px;
+  height: 40px;
+  border-radius: 10%;
+  background-color: rgb(71, 134, 143);
+  font-weight: 700;
+}

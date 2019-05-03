@@ -1,0 +1,20 @@
+.input{
+   /* text-align: left; */
+   margin: 20px;
+   width: 150px;
+   height: 40px;
+   font-style: italic;
+   font-size: 20px;
+   border-radius: 5px;
+   border: none;
+   background-color: rgb(223, 236, 238);
+   opacity: 0.6;
+}
+.submit {
+   width: 65px;
+   height: 40px; 
+}
+.submit{
+   border-radius: 5px;
+   
+}
