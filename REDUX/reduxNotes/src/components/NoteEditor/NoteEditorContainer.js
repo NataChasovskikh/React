@@ -5,7 +5,4 @@ import { notesOperations } from '../../modules/notes';
 
 const mapDispatchToProps = { addNote: notesOperations.addNote };
 
-export default connect(
-  null,
-  mapDispatchToProps,
-)(NoteEditor);
+export default connect(null, mapDispatchToProps)(NoteEditor);
