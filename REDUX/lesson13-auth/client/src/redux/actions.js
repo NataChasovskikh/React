@@ -1,52 +1,64 @@
-export const actiontypos = {
-   SINGUPREQUEST: 'session/SINGUPREQUEST',
-   SINGUPSUCCESS: 'session/SINGUPSUCCESS',
-   SINGUPERROR: 'session/SINGUPERROR',
+export const actionTypes = {
+   SIGNUPREQUEST: 'session/SIGNUPREQUEST',
+   SIGNUPSUCCESS: 'session/SIGNUPSUCCESS',
+   SIGNUPERROR: 'session/SIGNUPERROR',
 
-   SINGINREQUEST: 'session/SINGINREQUEST',
-   SINGINSUCCESS: 'session/SINGINSUCCESS',
-   SINGINERROR: 'session/SINGINERROR',
+   SIGNINREQUEST: 'session/SIGNINREQUEST',
+   SIGNINSUCCESS: 'session/SIGNINSUCCESS',
+   SIGNINERROR: 'session/SIGNINERROR',
 
-   SINGOUTREQUEST: 'session/SINGOUTREQUEST',
-   SINGOUTSUCCESS: 'session/SINGOUTSUCCESS',
-   SINGOUTERROR: 'session/SINGOUTERROR'
+   SIGNOUTREQUEST: 'session/SIGNOUTREQUEST',
+   SIGNOUTSUCCESS: 'session/SIGNOUTSUCCESS',
+   SIGNOUTERROR: 'session/SIGNOUTERROR',
+
+   REFRESHCURRENTUSERSTART: 'session/REFRESHCURRENTUSERSTART',
+   REFRESHCURRENTUSERSUCCESS: 'session/REFRESHCURRENTUSERSUCCESS'
+
 };
 
-
-export const  singUpRequest = () =>({
-   type: actionTypes.SINGUPREQUEST
+export const refreshUserStart = () => ({
+   type: actionTypes.REFRESHCURRENTUSERSTART
+});
+ 
+export const refreshUserSuccess = user => ({
+   type: actionTypes.REFRESHCURRENTUSERSUCCESS,
+   payload: { user }
 });
 
-export const  singUpSuccess = () =>({
-   type: actionTypes.SINGUPSUCCESS,
+export const  signUpRequest = () =>({
+   type: actionTypes.SIGNUPREQUEST
+});
+
+export const  signUpSuccess = (data) =>({
+   type: actionTypes.SIGNUPSUCCESS,
    payload: data
 });
 
-export const  singUpError = () =>({
-   type: actionTypes.SINGUPERROR,
+export const  signUpError = (error) =>({
+   type: actionTypes.SIGNUPERROR,
    payload: { error }
 });
 
-export const  singInRequest = () =>({
-   type: actionTypes.SINGINREQUEST
+export const  signInRequest = () =>({
+   type: actionTypes.SIGNINREQUEST
 });
 
-export const  singInSuccess = () =>({
-   type: actionTypes.SINGINSUCCESS,
+export const  signInSuccess = (data)=>({
+   type: actionTypes.SIGNINSUCCESS,
    payload: data
 });
 
-export const  singInError = () =>({
-   type: actionTypes.SINGINERROR,
+export const  signInError = (error) =>({
+   type: actionTypes.SIGNINERROR,
    payload: { error }
 });
 
-export const  singOutRequest = () =>({
-   type: actionTypes.SINGOUTREQUEST
+export const  signOutRequest = () =>({
+   type: actionTypes.SIGNOUTREQUEST
 });
 
-export const  singOutSuccess = () =>({
-   type: actionTypes.SINGOUTSUCCESS
+export const  signOutSuccess = () =>({
+   type: actionTypes.SIGNOUTSUCCESS
 });
 
 

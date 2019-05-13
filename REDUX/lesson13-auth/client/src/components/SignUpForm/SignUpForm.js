@@ -64,11 +64,11 @@ class SignUpForm extends Component {
   }
 }
 
-const mapDispatch = {
+const mapDispatchToProps = {
   onSubmit: operations.signUp
 };
 
 export default connect(
   null,
-  mapDispatch
+  mapDispatchToProps
 )(SignUpForm);

@@ -55,11 +55,11 @@ class SignInForm extends Component {
   }
 }
 
-const mapDispatch = {
+const mapDispatchToProps = {
   onSubmit: operations.signIn
 };
 
 export default connect(
   null,
-  mapDispatch
+  mapDispatchToProps
 )(SignInForm);
